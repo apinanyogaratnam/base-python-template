@@ -36,3 +36,6 @@ push-image:
 
 all:
 	make build && make auth && make tag && make push
+
+freeze:
+	pip freeze > requirements.txt
