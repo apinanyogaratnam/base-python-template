@@ -4,3 +4,4 @@
 .env.production
 venv
 volumes
+__pycache__
