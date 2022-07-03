@@ -1,4 +1,4 @@
-IMAGE := base-repository-template
+IMAGE := base-python-template
 VERSION := 0.0.1
 REGISTRY_URL := ghcr.io/apinanyogaratnam/${IMAGE}
 IMAGE_VERSION_NAME := ${REGISTRY_URL}:${VERSION}
