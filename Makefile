@@ -4,6 +4,8 @@ REGISTRY_URL := ghcr.io/apinanyogaratnam/${IMAGE}
 IMAGE_VERSION_NAME := ${REGISTRY_URL}:${VERSION}
 IMAGE_LATEST_VERSION_NAME := ${REGISTRY_URL}:latest
 
+.PHONY: venv
+
 build:
 	docker build -t ${IMAGE} .
 
@@ -39,3 +41,6 @@ all:
 
 freeze:
 	pip freeze > requirements.txt
+
+venv:
+	python3 -m venv venv
