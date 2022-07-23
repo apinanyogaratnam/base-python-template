@@ -47,3 +47,7 @@ freeze-dev:
 
 venv:
 	python3 -m venv venv
+
+workflow:
+	git tag -m 'v${VERSION}' v${VERSION}
+	git push --tags
